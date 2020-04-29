@@ -1,4 +1,4 @@
-import { generateCartToken, getMappedIncludes } from './utils';
+import { generateCartToken, getMappedIncludes, getRelationshipFromMappedIncludes } from './utils';
 import { JsonApiErrors } from './jsonapi_errors';
 import { stringify } from 'qs';
 
@@ -83,8 +83,12 @@ export class HttpClient {
     let cartItem: ResourceObject;
     cartItem = Array.isArray(data) ? data[0] : data;
     const mappedIncludes = getMappedIncludes(json.included);
-    const cartRelationship = cartItem.relationships.order_id.data;
-    const cart = mappedIncludes[cartRelationship.type][cartRelationship.id];
+    const cart = getRelationshipFromMappedIncludes(cartItem, 'order_id', mappedIncludes);
+
+    if (!cart || Array.isArray(cart)) {
+      // should never happen.
+      throw new Error('unexpected data format');
+    }
 
     return {
       cartItem,
@@ -99,8 +103,9 @@ export class HttpClient {
     fields?: RequestFields,
     includes: string[] = ['order_id', 'order_id.order_items', 'order_id.order_items.purchased_entity'],
   ) {
-    // `/jsonapi/carts/${parameters.cartId}/items/${parameters.orderItemId}`
-    // PATCH
+    if (!cartItem.relationships.order_id) {
+      throw new Error('invalid cart item object');
+    }
     const cartId = cartItem.relationships.order_id.data.id;
     const json = await this.request(
       `/carts/${cartId}/items/${cartItem.id}`,
@@ -132,8 +137,7 @@ export class HttpClient {
     }
 
     const mappedIncludes = getMappedIncludes(json.included);
-    const cartRelationship = patchedCartItem.relationships.order_id.data;
-    const cart = mappedIncludes[cartRelationship.type][cartRelationship.id];
+    const cart = getRelationshipFromMappedIncludes(patchedCartItem, 'order_id', mappedIncludes);
 
     return {
       cartItem: patchedCartItem,
@@ -143,8 +147,9 @@ export class HttpClient {
   }
 
   public async removeCartItem(cartItem: ResourceObject) {
-    // `/jsonapi/carts/${parameters.cartId}/items`
-    // DELETE
+    if (!cartItem.relationships.order_id) {
+      throw new Error('invalid cart item object');
+    }
     const cartId = cartItem.relationships.order_id.data.id;
     await this.request(`/carts/${cartId}/items`, undefined, {
       method: 'DELETE',
