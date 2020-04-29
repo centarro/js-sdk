@@ -1,0 +1,832 @@
+{
+  "jsonapi": {
+    "version": "1.0",
+    "meta": {
+      "links": {
+        "self": {
+          "href": "http:\/\/jsonapi.org\/format\/1.0\/"
+        }
+      }
+    }
+  },
+  "data": {
+    "type": "product--simple",
+    "id": "611e61c2-ea66-49fe-ae23-73dea19a631c",
+    "links": {
+      "describedby": {
+        "href": "https:\/\/example.dev\/jsonapiproducts\/simple\/resource\/schema"
+      },
+      "self": {
+        "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c"
+      }
+    },
+    "attributes": {
+      "title": "The Adventure Begins Camping Mug",
+      "body": {
+        "value": "\u003Cp\u003ESustainable hot chicken street art stumptown tousled pour-over mixtape. Listicle raclette polaroid hashtag. Marfa prism hot chicken aesthetic banh mi messenger bag. Kitsch put a bird on it 3 wolf moon, flannel air plant palo santo direct trade cred. Jianbing art party flexitarian gastropub ethical gluten-free tumblr master cleanse locavore, helvetica health goth austin fingerstache prism pickled. Franzen sartorial next level, pug heirloom locavore deep v tilde chicharrones. Roof party cloud bread tumeric taiyaki farm-to-table flexitarian, butcher cold-pressed.\u003C\/p\u003E\r\n\r\n\u003Cp\u003ETofu distillery poke chicharrones, poutine austin shabby chic cronut kogi XOXO. Swag seitan VHS af cray, health goth retro activated charcoal flannel tote bag squid heirloom. Kitsch yuccie la croix microdosing, bespoke retro hexagon small batch distillery photo booth lomo. Fingerstache vice banh mi mumblecore master cleanse cornhole.\u0026nbsp;\u003C\/p\u003E\r\n",
+        "format": "standard",
+        "processed": "\u003Cp\u003ESustainable hot chicken street art stumptown tousled pour-over mixtape. Listicle raclette polaroid hashtag. Marfa prism hot chicken aesthetic banh mi messenger bag. Kitsch put a bird on it 3 wolf moon, flannel air plant palo santo direct trade cred. Jianbing art party flexitarian gastropub ethical gluten-free tumblr master cleanse locavore, helvetica health goth austin fingerstache prism pickled. Franzen sartorial next level, pug heirloom locavore deep v tilde chicharrones. Roof party cloud bread tumeric taiyaki farm-to-table flexitarian, butcher cold-pressed.\u003C\/p\u003E\n\u003Cp\u003ETofu distillery poke chicharrones, poutine austin shabby chic cronut kogi XOXO. Swag seitan VHS af cray, health goth retro activated charcoal flannel tote bag squid heirloom. Kitsch yuccie la croix microdosing, bespoke retro hexagon small batch distillery photo booth lomo. Fingerstache vice banh mi mumblecore master cleanse cornhole.\u00a0\u003C\/p\u003E\n",
+        "summary": ""
+      }
+    },
+    "relationships": {
+      "stores": {
+        "data": [
+          {
+            "type": "store--online",
+            "id": "3c8ffdaa-95c0-4b11-8b4e-d27186863f19"
+          },
+          {
+            "type": "store--online",
+            "id": "5f7afd2e-8470-4c25-bc40-46d40563d0f6"
+          },
+          {
+            "type": "store--online",
+            "id": "c0efc490-c532-4b3d-bf3e-4ff509aed916"
+          }
+        ],
+        "links": {
+          "related": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/stores"
+          },
+          "self": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/relationships\/stores"
+          }
+        }
+      },
+      "variations": {
+        "data": [
+          {
+            "type": "product-variation--simple",
+            "id": "8ccb12f6-5465-454c-8495-5346798f9b68"
+          }
+        ],
+        "links": {
+          "related": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/variations"
+          },
+          "self": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/relationships\/variations"
+          }
+        }
+      },
+      "brand": {
+        "data": {
+          "type": "taxonomy-term--brands",
+          "id": "5b1f381f-b8aa-41ad-9631-147381497ca0"
+        },
+        "links": {
+          "related": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/brand"
+          },
+          "self": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/relationships\/brand"
+          }
+        }
+      },
+      "product_categories": {
+        "data": [
+          {
+            "type": "taxonomy-term--product-categories",
+            "id": "1cdb9879-80aa-4534-99f3-c3a09b851edd"
+          },
+          {
+            "type": "taxonomy-term--product-categories",
+            "id": "3fada410-028e-40a4-bec5-b175fc5372ac"
+          },
+          {
+            "type": "taxonomy-term--product-categories",
+            "id": "44e2287a-934b-484d-b342-151530af4a0d"
+          },
+          {
+            "type": "taxonomy-term--product-categories",
+            "id": "0d2f533f-c6c9-4e83-9105-e534aa0f06bc"
+          },
+          {
+            "type": "taxonomy-term--product-categories",
+            "id": "aa046f49-a4cf-4278-840a-2f0e6646c407"
+          },
+          {
+            "type": "taxonomy-term--product-categories",
+            "id": "fc14b667-b68d-417a-8f42-a4ec956190f1"
+          }
+        ],
+        "links": {
+          "related": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/product_categories"
+          },
+          "self": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/relationships\/product_categories"
+          }
+        }
+      },
+      "special_categories": {
+        "data": [
+          {
+            "type": "taxonomy-term--special-categories",
+            "id": "5ac7df92-6021-4de7-886d-4618bc7513ec"
+          }
+        ],
+        "links": {
+          "related": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/special_categories"
+          },
+          "self": {
+            "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/relationships\/special_categories"
+          }
+        }
+      }
+    }
+  },
+  "included": [
+    {
+      "type": "product-variation--simple",
+      "id": "8ccb12f6-5465-454c-8495-5346798f9b68",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapiproduct-variations\/simple\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/product-variations\/simple\/8ccb12f6-5465-454c-8495-5346798f9b68"
+        }
+      },
+      "attributes": {
+        "sku": "GH-CampingMug-001",
+        "price": {
+          "number": "20.0",
+          "currency_code": "USD",
+          "formatted": "$20.00"
+        },
+        "resolved_price": {
+          "number": "20.0",
+          "currency_code": "USD",
+          "formatted": "$20.00"
+        }
+      },
+      "relationships": {
+        "images": {
+          "data": [
+            {
+              "type": "file",
+              "id": "6e23d483-7c83-4ae4-bfc3-896f3f250082",
+              "meta": {
+                "alt": null,
+                "title": null,
+                "width": 670,
+                "height": 630
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/product-variations\/simple\/8ccb12f6-5465-454c-8495-5346798f9b68\/images"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/product-variations\/simple\/8ccb12f6-5465-454c-8495-5346798f9b68\/relationships\/images"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "file",
+      "id": "6e23d483-7c83-4ae4-bfc3-896f3f250082",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapifiles\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/files\/6e23d483-7c83-4ae4-bfc3-896f3f250082"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "filename": "(Gentlemen\u0027s Hardware) The Adventure Begins Camping Mug.jpg",
+        "uri": {
+          "value": "public:\/\/(Gentlemen\u0027s Hardware) The Adventure Begins Camping Mug.jpg",
+          "url": "\/sites\/default\/files\/%28Gentlemen%27s%20Hardware%29%20The%20Adventure%20Begins%20Camping%20Mug.jpg"
+        },
+        "filemime": "image\/jpeg",
+        "filesize": 144511,
+        "status": true,
+        "created": "2020-02-28T19:33:26+00:00",
+        "changed": "2020-02-28T19:33:26+00:00"
+      },
+      "relationships": {
+        "uid": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/files\/6e23d483-7c83-4ae4-bfc3-896f3f250082\/uid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/files\/6e23d483-7c83-4ae4-bfc3-896f3f250082\/relationships\/uid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy-term--special-categories",
+      "id": "5ac7df92-6021-4de7-886d-4618bc7513ec",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapitaxonomy_terms\/special_categories\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/special_categories\/5ac7df92-6021-4de7-886d-4618bc7513ec"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "revision_created": "2020-02-28T19:33:26+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Featured",
+        "description": null,
+        "weight": 0,
+        "changed": "2020-02-28T19:33:26+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        }
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy-vocabulary",
+            "id": "18b3f70a-f1e5-4b82-85aa-7f43c67aebc7"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/special_categories\/5ac7df92-6021-4de7-886d-4618bc7513ec\/vid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/special_categories\/5ac7df92-6021-4de7-886d-4618bc7513ec\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/special_categories\/5ac7df92-6021-4de7-886d-4618bc7513ec\/revision_user"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/special_categories\/5ac7df92-6021-4de7-886d-4618bc7513ec\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy-term--special-categories",
+              "id": "virtual",
+              "meta": {
+                "links": {
+                  "help": {
+                    "href": "https:\/\/www.drupal.org\/docs\/8\/modules\/json-api\/core-concepts#virtual",
+                    "meta": {
+                      "about": "Usage and meaning of the \u0027virtual\u0027 resource identifier."
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/special_categories\/5ac7df92-6021-4de7-886d-4618bc7513ec\/parent"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/special_categories\/5ac7df92-6021-4de7-886d-4618bc7513ec\/relationships\/parent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy-term--product-categories",
+      "id": "1cdb9879-80aa-4534-99f3-c3a09b851edd",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapitaxonomy_terms\/product_categories\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/1cdb9879-80aa-4534-99f3-c3a09b851edd"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "revision_created": "2020-02-28T19:33:26+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Urban Living",
+        "description": null,
+        "weight": 20,
+        "changed": "2020-02-28T19:33:26+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        }
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy-vocabulary",
+            "id": "708de167-a452-4be8-812d-81c1c6f5ea22"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/1cdb9879-80aa-4534-99f3-c3a09b851edd\/vid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/1cdb9879-80aa-4534-99f3-c3a09b851edd\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/1cdb9879-80aa-4534-99f3-c3a09b851edd\/revision_user"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/1cdb9879-80aa-4534-99f3-c3a09b851edd\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy-term--product-categories",
+              "id": "virtual",
+              "meta": {
+                "links": {
+                  "help": {
+                    "href": "https:\/\/www.drupal.org\/docs\/8\/modules\/json-api\/core-concepts#virtual",
+                    "meta": {
+                      "about": "Usage and meaning of the \u0027virtual\u0027 resource identifier."
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/1cdb9879-80aa-4534-99f3-c3a09b851edd\/parent"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/1cdb9879-80aa-4534-99f3-c3a09b851edd\/relationships\/parent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy-term--product-categories",
+      "id": "3fada410-028e-40a4-bec5-b175fc5372ac",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapitaxonomy_terms\/product_categories\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/3fada410-028e-40a4-bec5-b175fc5372ac"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "revision_created": "2020-02-28T19:33:26+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Home",
+        "description": null,
+        "weight": 1,
+        "changed": "2020-02-28T19:33:26+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        }
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy-vocabulary",
+            "id": "708de167-a452-4be8-812d-81c1c6f5ea22"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/3fada410-028e-40a4-bec5-b175fc5372ac\/vid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/3fada410-028e-40a4-bec5-b175fc5372ac\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/3fada410-028e-40a4-bec5-b175fc5372ac\/revision_user"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/3fada410-028e-40a4-bec5-b175fc5372ac\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy-term--product-categories",
+              "id": "1cdb9879-80aa-4534-99f3-c3a09b851edd"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/3fada410-028e-40a4-bec5-b175fc5372ac\/parent"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/3fada410-028e-40a4-bec5-b175fc5372ac\/relationships\/parent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy-term--product-categories",
+      "id": "44e2287a-934b-484d-b342-151530af4a0d",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapitaxonomy_terms\/product_categories\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/44e2287a-934b-484d-b342-151530af4a0d"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "revision_created": "2020-02-28T19:33:26+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Accessories",
+        "description": null,
+        "weight": 0,
+        "changed": "2020-02-28T19:33:26+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        }
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy-vocabulary",
+            "id": "708de167-a452-4be8-812d-81c1c6f5ea22"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/44e2287a-934b-484d-b342-151530af4a0d\/vid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/44e2287a-934b-484d-b342-151530af4a0d\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/44e2287a-934b-484d-b342-151530af4a0d\/revision_user"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/44e2287a-934b-484d-b342-151530af4a0d\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy-term--product-categories",
+              "id": "3fada410-028e-40a4-bec5-b175fc5372ac"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/44e2287a-934b-484d-b342-151530af4a0d\/parent"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/44e2287a-934b-484d-b342-151530af4a0d\/relationships\/parent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy-term--product-categories",
+      "id": "0d2f533f-c6c9-4e83-9105-e534aa0f06bc",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapitaxonomy_terms\/product_categories\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/0d2f533f-c6c9-4e83-9105-e534aa0f06bc"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "revision_created": "2020-02-28T19:33:26+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Kitchen",
+        "description": null,
+        "weight": 1,
+        "changed": "2020-02-28T19:33:26+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        }
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy-vocabulary",
+            "id": "708de167-a452-4be8-812d-81c1c6f5ea22"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/0d2f533f-c6c9-4e83-9105-e534aa0f06bc\/vid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/0d2f533f-c6c9-4e83-9105-e534aa0f06bc\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/0d2f533f-c6c9-4e83-9105-e534aa0f06bc\/revision_user"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/0d2f533f-c6c9-4e83-9105-e534aa0f06bc\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy-term--product-categories",
+              "id": "3fada410-028e-40a4-bec5-b175fc5372ac"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/0d2f533f-c6c9-4e83-9105-e534aa0f06bc\/parent"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/0d2f533f-c6c9-4e83-9105-e534aa0f06bc\/relationships\/parent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy-term--product-categories",
+      "id": "aa046f49-a4cf-4278-840a-2f0e6646c407",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapitaxonomy_terms\/product_categories\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/aa046f49-a4cf-4278-840a-2f0e6646c407"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "revision_created": "2020-02-28T19:33:26+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Outdoors",
+        "description": null,
+        "weight": 3,
+        "changed": "2020-02-28T19:33:26+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        }
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy-vocabulary",
+            "id": "708de167-a452-4be8-812d-81c1c6f5ea22"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/aa046f49-a4cf-4278-840a-2f0e6646c407\/vid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/aa046f49-a4cf-4278-840a-2f0e6646c407\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/aa046f49-a4cf-4278-840a-2f0e6646c407\/revision_user"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/aa046f49-a4cf-4278-840a-2f0e6646c407\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy-term--product-categories",
+              "id": "1cdb9879-80aa-4534-99f3-c3a09b851edd"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/aa046f49-a4cf-4278-840a-2f0e6646c407\/parent"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/aa046f49-a4cf-4278-840a-2f0e6646c407\/relationships\/parent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy-term--product-categories",
+      "id": "fc14b667-b68d-417a-8f42-a4ec956190f1",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapitaxonomy_terms\/product_categories\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/fc14b667-b68d-417a-8f42-a4ec956190f1"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "revision_created": "2020-02-28T19:33:26+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Accessories",
+        "description": null,
+        "weight": 0,
+        "changed": "2020-02-28T19:33:26+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        }
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy-vocabulary",
+            "id": "708de167-a452-4be8-812d-81c1c6f5ea22"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/fc14b667-b68d-417a-8f42-a4ec956190f1\/vid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/fc14b667-b68d-417a-8f42-a4ec956190f1\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/fc14b667-b68d-417a-8f42-a4ec956190f1\/revision_user"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/fc14b667-b68d-417a-8f42-a4ec956190f1\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy-term--product-categories",
+              "id": "aa046f49-a4cf-4278-840a-2f0e6646c407"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/fc14b667-b68d-417a-8f42-a4ec956190f1\/parent"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/product_categories\/fc14b667-b68d-417a-8f42-a4ec956190f1\/relationships\/parent"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "taxonomy-term--brands",
+      "id": "5b1f381f-b8aa-41ad-9631-147381497ca0",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapitaxonomy_terms\/brands\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/brands\/5b1f381f-b8aa-41ad-9631-147381497ca0"
+        }
+      },
+      "attributes": {
+        "langcode": "en",
+        "revision_created": "2020-02-28T19:33:26+00:00",
+        "revision_log_message": null,
+        "status": true,
+        "name": "Gentlemen\u0027s Hardware",
+        "description": null,
+        "weight": 0,
+        "changed": "2020-02-28T19:33:26+00:00",
+        "default_langcode": true,
+        "revision_translation_affected": true,
+        "path": {
+          "alias": null,
+          "pid": null,
+          "langcode": "en"
+        }
+      },
+      "relationships": {
+        "vid": {
+          "data": {
+            "type": "taxonomy-vocabulary",
+            "id": "5aefc539-a654-4d50-bc79-cbc512fc2036"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/brands\/5b1f381f-b8aa-41ad-9631-147381497ca0\/vid"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/brands\/5b1f381f-b8aa-41ad-9631-147381497ca0\/relationships\/vid"
+            }
+          }
+        },
+        "revision_user": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/brands\/5b1f381f-b8aa-41ad-9631-147381497ca0\/revision_user"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/brands\/5b1f381f-b8aa-41ad-9631-147381497ca0\/relationships\/revision_user"
+            }
+          }
+        },
+        "parent": {
+          "data": [
+            {
+              "type": "taxonomy-term--brands",
+              "id": "virtual",
+              "meta": {
+                "links": {
+                  "help": {
+                    "href": "https:\/\/www.drupal.org\/docs\/8\/modules\/json-api\/core-concepts#virtual",
+                    "meta": {
+                      "about": "Usage and meaning of the \u0027virtual\u0027 resource identifier."
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/brands\/5b1f381f-b8aa-41ad-9631-147381497ca0\/parent"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/taxonomy_terms\/brands\/5b1f381f-b8aa-41ad-9631-147381497ca0\/relationships\/parent"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "links": {
+    "self": {
+      "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c?fields%5Bfile--file%5D=uri\u0026fields%5Bproduct--simple%5D=title%2Cbody%2Cvariations%2Cspecial_categories%2Cproduct_categories%2Cbrand%2Cstores\u0026fields%5Bproduct-variation--simple%5D=sku%2Cprice%2Cresolved_price%2Cimages\u0026fields%5Btaxonomy_term--brands%5D=name\u0026fields%5Btaxonomy_term--product_categories%5D=name\u0026fields%5Btaxonomy_term--special_categories%5D=name\u0026include=variations%2Cvariations.images%2Cspecial_categories%2Cproduct_categories%2Cbrand"
+    }
+  }
+}

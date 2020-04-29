@@ -1,0 +1,185 @@
+{
+  "jsonapi": {
+    "version": "1.0",
+    "meta": {
+      "links": {
+        "self": {
+          "href": "http:\/\/jsonapi.org\/format\/1.0\/"
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "type": "order--physical",
+      "id": "e01c73af-e825-44e6-8530-6a4dc663a44f",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapiorders\/physical\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/orders\/physical\/e01c73af-e825-44e6-8530-6a4dc663a44f"
+        }
+      },
+      "attributes": {
+        "total_price": {
+          "number": "20.0",
+          "currency_code": "USD",
+          "formatted": "$20.00"
+        },
+        "order_total": {
+          "subtotal": {
+            "number": "20.0",
+            "currency_code": "USD",
+            "formatted": "$20.00"
+          },
+          "adjustments": [],
+          "total": {
+            "number": "20.0",
+            "currency_code": "USD",
+            "formatted": "$20.00"
+          }
+        }
+      },
+      "relationships": {
+        "order_items": {
+          "data": [
+            {
+              "type": "order-item--physical-product-variation",
+              "id": "a5ce1443-3c88-4539-8636-244d5d3d4f1c"
+            }
+          ],
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/orders\/physical\/e01c73af-e825-44e6-8530-6a4dc663a44f\/order_items"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/orders\/physical\/e01c73af-e825-44e6-8530-6a4dc663a44f\/relationships\/order_items"
+            }
+          }
+        },
+        "coupons": {
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/orders\/physical\/e01c73af-e825-44e6-8530-6a4dc663a44f\/coupons"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/orders\/physical\/e01c73af-e825-44e6-8530-6a4dc663a44f\/relationships\/coupons"
+            }
+          }
+        }
+      },
+      "meta": {
+        "constraints": [
+          {
+            "required": {
+              "detail": "This value should not be null.",
+              "source": {
+                "pointer": "billing_profile"
+              }
+            }
+          },
+          {
+            "required": {
+              "detail": "This value should not be null.",
+              "source": {
+                "pointer": "shipping_information"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "included": [
+    {
+      "type": "order-item--physical-product-variation",
+      "id": "a5ce1443-3c88-4539-8636-244d5d3d4f1c",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapiorder-items\/physical-product-variation\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/order-items\/physical-product-variation\/a5ce1443-3c88-4539-8636-244d5d3d4f1c"
+        }
+      },
+      "attributes": {
+        "title": "The Adventure Begins Camping Mug",
+        "quantity": "1.0",
+        "unit_price": {
+          "number": "20.0",
+          "currency_code": "USD",
+          "formatted": "$20.00"
+        },
+        "total_price": {
+          "number": "20.0",
+          "currency_code": "USD",
+          "formatted": "$20.00"
+        }
+      },
+      "relationships": {
+        "order_id": {
+          "data": {
+            "type": "order--physical",
+            "id": "e01c73af-e825-44e6-8530-6a4dc663a44f"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/order-items\/physical-product-variation\/a5ce1443-3c88-4539-8636-244d5d3d4f1c\/order_id"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/order-items\/physical-product-variation\/a5ce1443-3c88-4539-8636-244d5d3d4f1c\/relationships\/order_id"
+            }
+          }
+        },
+        "purchased_entity": {
+          "data": {
+            "type": "product-variation--simple",
+            "id": "8ccb12f6-5465-454c-8495-5346798f9b68"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/order-items\/physical-product-variation\/a5ce1443-3c88-4539-8636-244d5d3d4f1c\/purchased_entity"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/order-items\/physical-product-variation\/a5ce1443-3c88-4539-8636-244d5d3d4f1c\/relationships\/purchased_entity"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "product-variation--simple",
+      "id": "8ccb12f6-5465-454c-8495-5346798f9b68",
+      "links": {
+        "describedby": {
+          "href": "https:\/\/example.dev\/jsonapiproduct-variations\/simple\/resource\/schema"
+        },
+        "self": {
+          "href": "https:\/\/example.dev\/jsonapi\/product-variations\/simple\/8ccb12f6-5465-454c-8495-5346798f9b68"
+        }
+      },
+      "relationships": {
+        "product_id": {
+          "data": {
+            "type": "product--simple",
+            "id": "611e61c2-ea66-49fe-ae23-73dea19a631c"
+          },
+          "links": {
+            "related": {
+              "href": "https:\/\/example.dev\/jsonapi\/product-variations\/simple\/8ccb12f6-5465-454c-8495-5346798f9b68\/product_id"
+            },
+            "self": {
+              "href": "https:\/\/example.dev\/jsonapi\/product-variations\/simple\/8ccb12f6-5465-454c-8495-5346798f9b68\/relationships\/product_id"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "links": {
+    "self": {
+      "href": "https:\/\/example.dev\/jsonapi\/carts?fields%5Border--physical%5D=total_price%2Corder_total%2Ccoupons%2Corder_items\u0026fields%5Border-item--product-variation%5D=title%2Cquantity%2Cunit_price%2Ctotal_price%2Cpurchased_entity%2Corder_id\u0026fields%5Bproduct-variation--clothing%5D=product_id\u0026fields%5Bproduct-variation--simple%5D=product_id\u0026include=order_items%2Corder_items.purchased_entity"
+    }
+  }
+}
