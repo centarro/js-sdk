@@ -14,7 +14,6 @@ interface ResourceIdentifier {
 interface ResourceObject extends ResourceIdentifier {
   attributes: { [key: string]: any };
   relationships: {
-    // @todo figure out why we need to also add undefined.
     [key: string]: Relationship | undefined;
   };
   links?: any;

@@ -22,15 +22,15 @@ export const getRelationshipFromMappedIncludes = (
   field: string,
   mappedIncludes: MappedIncludes,
 ): null | ResourceObject[] | ResourceObject => {
-  if (!resourceObject.relationships[field] || !resourceObject.relationships[field].data) {
+  const relationship = resourceObject.relationships[field];
+  if (!relationship) {
     return null;
   }
-  if (Array.isArray(resourceObject.relationships[field].data)) {
-    return resourceObject.relationships[field].data.map((relationship: ResourceIdentifier) => {
+  if (Array.isArray(relationship.data)) {
+    return relationship.data.map((relationship: ResourceIdentifier) => {
       return mappedIncludes[relationship.type][relationship.id];
     });
   } else {
-    const relationship = resourceObject.relationships[field].data;
-    return mappedIncludes[relationship.type][relationship.id];
+    return mappedIncludes[relationship.data.type][relationship.data.id];
   }
 };
