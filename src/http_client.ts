@@ -53,7 +53,7 @@ export class HttpClient {
 
   public async addToCart(
     purchasableEntity: ResourceIdentifier,
-    orderQuantity: number,
+    quantity: number,
     fields?: RequestFields,
     includes: string[] = ['order_id', 'order_id.order_items', 'order_id.order_items.purchased_entity'],
   ): Promise<{ cartItem: ResourceObject; cart: ResourceObject; included: any }> {
@@ -68,7 +68,7 @@ export class HttpClient {
               type: purchasableEntity.type,
               id: purchasableEntity.id,
               meta: {
-                orderQuantity,
+                quantity,
               },
             },
           ],
