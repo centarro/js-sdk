@@ -10,6 +10,7 @@ import { stringify } from 'qs';
 
 export class HttpClient {
   apiUrl: string;
+  apiPrefix: string;
   cartToken: string;
   storeId?: string;
   authorization?: string;
@@ -19,7 +20,8 @@ export class HttpClient {
     if (apiPrefix.substring(0, 1) !== '/') {
       throw new Error('apiPrefix must begin with "/"');
     }
-    this.apiUrl = `${apiUrl}${apiPrefix}`;
+    this.apiPrefix = apiPrefix;
+    this.apiUrl = apiUrl;
     // ensure a cart token.
     this.cartToken = cartToken || generateCartToken();
     this.storeId = storeId;
@@ -277,6 +279,9 @@ export class HttpClient {
    */
   public async request(input: RequestInfo, options?: RequestOptions, init?: RequestInit): Promise<TopLevelDocument> {
     const queryString = this.requestOptionsToQuery(options);
+    if (input.toString().indexOf(this.apiPrefix) !== 0) {
+      input = `${this.apiPrefix}${input}`
+    }
     const requestUrl = `${this.apiUrl}${input}${queryString}`;
 
     const request = new Request(requestUrl, init);
