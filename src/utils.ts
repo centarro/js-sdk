@@ -26,6 +26,9 @@ export const getRelationshipFromMappedIncludes = (
   if (!relationship) {
     return null;
   }
+  if (!relationship.data) {
+    return null;
+  }
   if (Array.isArray(relationship.data)) {
     return relationship.data.map((identifier: ResourceIdentifier) => {
       return mappedIncludes[identifier.type][identifier.id];
