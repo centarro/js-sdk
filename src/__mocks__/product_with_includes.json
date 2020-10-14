@@ -121,12 +121,6 @@
         }
       },
       "special_categories": {
-        "data": [
-          {
-            "type": "taxonomy-term--special-categories",
-            "id": "5ac7df92-6021-4de7-886d-4618bc7513ec"
-          }
-        ],
         "links": {
           "related": {
             "href": "https:\/\/example.dev\/jsonapi\/products\/simple\/611e61c2-ea66-49fe-ae23-73dea19a631c\/special_categories"
