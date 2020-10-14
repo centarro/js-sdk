@@ -1,6 +1,6 @@
 {
   "name": "@centarro/js-sdk",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "SDK for interacting with your Centarro Commerce site's APIs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
