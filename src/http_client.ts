@@ -282,7 +282,7 @@ export class HttpClient {
     let requestUrl = '';
     // If an absolute URL was passed, use that.
     if (/^https?:\/\//i.test(input.toString())) {
-      requestUrl = input.toString();
+      requestUrl = `${input.toString()}${queryString}`;
     } else {
       // If the API prefix is missing, prepend it.
       if (input.toString().indexOf(this.apiPrefix) !== 0) {
