@@ -279,10 +279,17 @@ export class HttpClient {
    */
   public async request(input: RequestInfo, options?: RequestOptions, init?: RequestInit): Promise<TopLevelDocument> {
     const queryString = this.requestOptionsToQuery(options);
-    if (input.toString().indexOf(this.apiPrefix) !== 0) {
-      input = `${this.apiPrefix}${input}`
+    let requestUrl = '';
+    // If an absolute URL was passed, use that.
+    if (/^https?:\/\//i.test(input.toString())) {
+      requestUrl = input.toString();
+    } else {
+      // If the API prefix is missing, prepend it.
+      if (input.toString().indexOf(this.apiPrefix) !== 0) {
+        input = `${this.apiPrefix}${input}`;
+      }
+      requestUrl = `${this.apiUrl}${input}${queryString}`;
     }
-    const requestUrl = `${this.apiUrl}${input}${queryString}`;
 
     const request = new Request(requestUrl, init);
     request.headers.set('Accept', 'application/vnd.api+json');
