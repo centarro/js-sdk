@@ -27,4 +27,7 @@ test('mapped include', () => {
     throw new Error('categories is a multi value relationship');
   }
   expect(categories.length).toBe(6);
+
+  const emptyRelationship = getRelationshipFromMappedIncludes(product.data, 'special_categories', mappedIncludes);
+  expect(emptyRelationship === null);
 });
