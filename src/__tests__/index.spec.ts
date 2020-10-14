@@ -72,6 +72,16 @@ describe('test get cart', () => {
     expect(cart.id).toBe('e01c73af-e825-44e6-8530-6a4dc663a44f');
     expect(included.length).toBe(2);
   });
+  test('get cart as absolute url', async () => {
+    const client = new HttpClient(`https://localhost:8080`, `/jsonapi`);
+    const { data, included } = await client.request(
+      `https://localhost:8080/jsonapi/carts?include=order_items%2Corder_items.purchased_entity`,
+    );
+    if (!data || !included) {
+      throw new Error('`data` and `included` should not have been null');
+    }
+    expect(included.length).toBe(2);
+  });
 });
 
 describe('test add to cart', () => {
