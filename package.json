@@ -1,7 +1,7 @@
 {
   "name": "@centarro/js-sdk",
   "version": "1.0.4",
-  "description": "",
+  "description": "SDK for interacting with your Centarro Commerce site's APIs",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -12,6 +12,7 @@
     "lint": "tslint -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest",
+    "prepare" : "npm run build",
     "prepublishOnly": "yarn lint && yarn test",
     "preversion": "yarn lint",
     "version": "yarn format && git add -A src",
